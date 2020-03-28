@@ -11,8 +11,6 @@
 from math import log
 import operator
 ## 度量数据的无序程度
-
-
 def calcShannonEnt(dataSet):
     numEntries=len(dataSet)
     labelCounts={} ## 新建一个字典
