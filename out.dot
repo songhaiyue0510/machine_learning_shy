@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="node #0\nastigmatic=yes <= 0.5\ngini = 0.538\nsamples = 24\nvalue = [4, 15, 5]\nclass = no lenses", fillcolor="#39e58186"] ;
+1 [label="node #1\nprescript=myope <= 0.5\ngini = 0.486\nsamples = 12\nvalue = [0, 7, 5]\nclass = no lenses", fillcolor="#39e58149"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="node #2\ngini = 0.5\nsamples = 6\nvalue = [0, 3, 3]\nclass = no lenses", fillcolor="#39e58100"] ;
+1 -> 2 ;
+3 [label="node #3\ngini = 0.444\nsamples = 6\nvalue = [0, 4, 2]\nclass = no lenses", fillcolor="#39e5817f"] ;
+1 -> 3 ;
+4 [label="node #4\nprescript=hyper <= 0.5\ngini = 0.444\nsamples = 12\nvalue = [4, 8, 0]\nclass = no lenses", fillcolor="#39e5817f"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="node #5\ngini = 0.5\nsamples = 6\nvalue = [3, 3, 0]\nclass = hard", fillcolor="#e5813900"] ;
+4 -> 5 ;
+6 [label="node #6\ngini = 0.278\nsamples = 6\nvalue = [1, 5, 0]\nclass = no lenses", fillcolor="#39e581cc"] ;
+4 -> 6 ;
+}
