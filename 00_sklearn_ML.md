@@ -26,14 +26,17 @@ from sklearn.calibration import CalibratedClassifierCV # 概率校准
 # 评估指标
 from sklearn.metrics import brier_score_loss,recall_score,roc_auc_score 
 from sklearn.calibration import calibration_curve ## 可靠性曲线
+from sklearn.model_selection import cross_val_score # 交叉验证
+
+## 数据预处理和特征选择
+from sklearn.preprocessing import MinMaxScaler,StandardScaler ## 数据的无量纲化
+from sklearn.impute import SimpleImputer           ## 缺失值处理模块
+from sklearn.preprocessing import LabelEncoder     ## 标签专用，能够将分类转换为分类数值
+from sklearn.preprocessing import OrdinalEncoder   ## 特征专用，将分类特征转换为分类数值，不能导入一维数组
+from sklearn.preprocessing import OneHotEncoder    ## 独热编码，哑变量
+from sklearn.preprocessing import Binarizer        ## 连续变量二值化
+from sklearn.preprocessing import KBinsDiscretizer ## 连续变量分箱
 
 ```
 
-
-
-### Machine learning 常用方法
-
-```python
-
-```
 
